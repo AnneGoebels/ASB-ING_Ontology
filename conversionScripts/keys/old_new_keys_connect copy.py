@@ -21,14 +21,11 @@ model_meta = xmi_new_keys_parse.getXmiData("DataResources\schluessel.xml")
 
 g = Graph()
 
-#ANS = Namespace("http://asbingowl.org/def/2016/asbingowl#")
-#AONS = Namespace("http://asbingowl.org/def/2013/asbingowl/keys#")
-#ANSK = Namespace("http://asbingowl.org/def/2016/asbingowl/keys#")
-
  #w3id version
-ANS = Namespace("https://w3id.org/asbingowl/2016/core#")
-AONS = Namespace("https://w3id.org/asbingowl/2013/keys#")
-ANSK = Namespace("https://w3id.org/asbingowl/2016/keys#")
+ANS = Namespace("https://w3id.org/asbingowl/core#")
+AONS = Namespace("https://w3id.org/asbingowl/keys#")
+ANSK = Namespace("https://w3id.org/asbingowl/keys/2013#")
+
 
 
 g.bind("owl", OWL)

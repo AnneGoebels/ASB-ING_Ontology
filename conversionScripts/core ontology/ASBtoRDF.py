@@ -14,11 +14,11 @@ dataModel = XMIParser.getXmiData (r"C:\GitHub\TwinGen\DataResources\ASB-Ing-neu-
 
 g = XMItoRDF.dataToRdf(dataModel)
 
-g2 = Graph()
-file = r"C:\GitHub\TwinGen\Ontologies\allkeysW3.ttl"
-g2.parse(file, format="turtle")
+#g2 = Graph()
+#file = r"C:\GitHub\TwinGen\Ontologies\allkeysW3.ttl"
+#g2.parse(file, format="turtle")
 
-g += g2
+#g += g2
 
-f = open ("Ontologies\ASB_Ontology_Merged.ttl","wb")
+f = open ("Ontologies\ASB_Ontology_MainPartW3.ttl","wb")
 f.write(g.serialize( format='turtle'))

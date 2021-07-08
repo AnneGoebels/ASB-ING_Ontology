@@ -19,14 +19,12 @@ c=conn.cursor()
 def dataToRdf(model_meta):
 
     graph =Graph()
-  #  ANS = Namespace("http://asbingowl.org/def/2016/asbingowl#")
-  #  AONS = Namespace("http://asbingowl.org/def/2013/asbingowl/keys#")
-  #  ANSK = Namespace("http://asbingowl.org/def/2016/asbingowl/keys#")
+  
     
     #w3id version
-    ANS = Namespace("https://w3id.org/asbingowl/2016/core#")
-    AONS = Namespace("https://w3id.org/asbingowl/2013/keys#")
-    ANSK = Namespace("https://w3id.org/asbingowl/2016/keys#")
+    ANS = Namespace("https://w3id.org/asbingowl/core#")
+    AONS = Namespace("https://w3id.org/asbingowl/keys#")
+    ANSK = Namespace("https://w3id.org/asbingowl/keys/2013#")
 
 
     graph.bind("owl", OWL)
